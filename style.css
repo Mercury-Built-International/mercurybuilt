@@ -1,0 +1,19 @@
+/* #
+	Company: Mercury Built International
+	Description: This is Mercury Built International
+	Author URI: http://www.sidoniedesigns.com/
+	Version: 1.0
+   Copyright: Joel Savitz 2017
+*/
+
+div.center {
+  position:relative;
+}
+
+h1.center {
+  text-align:center;
+  position: absolute;               
+  top: 50%;                         
+  transform: translate(0, -50%) 
+}
+
