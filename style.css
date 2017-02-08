@@ -1,19 +1,227 @@
-/* #
-	Company: Mercury Built International
-	Description: This is Mercury Built International
-	Author URI: http://www.sidoniedesigns.com/
-	Version: 1.0
-   Copyright: Joel Savitz 2017
-*/
-
-div.center {
-  position:relative;
+#main-header {
+  padding-top: 10vh;
+  background: url(background.jpg)no-repeat center;
+  background-size: cover;
+  opacity: .7;
+  /*height: 90vh;
+  width: 99vw;
+  max-height: 100vh;
+  max-width: 100vw;*/
 }
 
-h1.center {
-  text-align:center;
-  position: relative;               
-  top: 50%;                         
-  /*transform: translate(0, -50%);*/
+#main-header h1 {
+  margin: 0% 12%;
+  padding: 0.5%;
+  font: bold 8em 'Oswald', sans-serif;
+  /* font-style: italic;
+  font-weight: bold;
+  font-size: 9em;
+  font-family: 'Oswald', sans-serif; */
+  text-align: center;
+  color: white;
+  font-style: bold;
+  background: #8D99B3;
+  border: solid 4px black;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+  opacity: 1.5;
 }
+
+#main-header h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.25em;
+  text-align: center;
+  margin: 0% 20%;
+  color: #F4F7FA;
+  font-style: italic;
+  text-shadow: 3px 4px 14px rgb(0, 0, 0);
+}
+
+#down-arrow {
+  width: 2%;
+  height: auto;
+  margin-left: 49%;
+  margin-right: 49%;
+  margin-top: 35vh;
+}
+
+#intro {
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  background: rgba(0,0,255,0.3);
+  overflow: hidden;
+  padding-bottom: -50vh;
+}
+
+#intro li {
+  float: left;
+  padding-bottom: 6%;
+  text-align: center;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  width: 28.3333%;
+  display: block;
+}
+
+
+#intro h3 {
+  font-size: 2em;
+}
+
+#intro h4 {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+}
+
+#intro h5 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+}
+
+ {
+  border-bottom: solid 6px rgba(0, 0, 0, .2);
+  margin-top: -5%;
+  padding: 0 0 6% 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+h2 {
+  text-align: center;
+  left: 50%;
+}
+
+
+
+
+
+/* The styling for the actual phrases including the :hover properties */
+
+
+/* Styling for 'submit your email' and 'start your build today' */
+
+
+/* USER SUBMISSION Element code including all the styling for the placeholder text and submit button */
+
+#submission {
+  background: #FA1E1A;
+  padding-top: 1vh;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  max-height: 10%;
+  margin-bottom: -5%;
+}
+
+#submission h4 {
+  color: white;
+  font-size: .8em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+  padding: 0;
+  margin-top: 2%;
+  margin-bottom: 0;
+}
+
+#text {
+  color: black;
+  font-size: .75em;
+}
+
+::-webkit-input-placeholder {
+  color: #ccc;
+  padding-left: 1%;
+  font-style: italic;
+}
+
+::-moz-placeholder {
+  color: #ccc;
+  padding-left: 1%;
+}
+
+
+/* firefox 19+ */
+
+:-ms-input-placeholder {
+  color: #ccc;
+  padding-left: 1%;
+}
+
+
+/* ie */
+
+input:-moz-placeholder {
+  color: #ccc;
+  padding-left: 1%;
+}
+
+#submit-button {
+  padding: 1vh 4vw;
+  background: none;
+  text-align: center;
+  font-size: 1em;
+  border: solid 6px rgba(0, 0, 0, .2);
+  margin: none;
+}
+
+#submit-button:hover {
+  padding: 1vh 4vw;
+  background: #FF4541;
+  border: solid 6px #EB322E;
+  margin: 0;
+}
+
+
+/* FOOTER CODE */
+
+footer {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  font: 1.25em 'Oswald', sans-serif;
+  color: rgba(140, 109, 174, 0.9);
+  padding: 2%;
+  margin-top: 5%;
+}
+
+.footer-basic-centered .footer-company-motto {
+  color: #8d9093;
+  margin: 0;
+}
+
+.footer-basic-centered .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-basic-centered .footer-links {
+  list-style: none;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 35px 0 23px;
+  margin: 0;
+  text-decoration: none;
+}
+
+a:link {
+  color: rgb(130, 99, 164)
+}
+
+
+
+
 
