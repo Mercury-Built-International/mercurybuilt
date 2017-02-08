@@ -178,8 +178,8 @@ input:-moz-placeholder {
 
 #submit-button:hover {
   padding: 1vh 4vw;
-  background: #4CAF50;
-  border: solid 6px #4CAF50;
+  background: #FF4541;
+  border: solid 6px #EB322E;
   margin: 0;
 }
 
