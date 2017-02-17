@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Sansita');
+.appetizer h1 {
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 5px;
+    color: grey;
+    border-style: dashed;
+    background-color: #D5D2D2;
+    border-width: 5px;     /* not phat */
+    font-family: 'Fjalla One', sans-serif;
+
+}
+
+.appetizer h1:hover {
+    border-style: solid;
+    /* no illegals */
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #090909;
+    border-left-width: 2em;
+    border-right-width: 2em;
+    /* PHAT LIKE TRUMP'S WALL (though not really anymore*/
+}
+
+.vegan {
+    background-color: green;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    padding: 20px;
+    padding-top: 30px;
+    border-style: solid;
+    border-color: #BCBE1D;
+    border-width: phat;
+    position: relative;
+}
+
+.vegan p {
+    text-align: justify;
+    font-family: 'Sansita', sans-serif;
+    font-size: 2em;
+}
+
+div.meatHook{
+    background-color: #9BD7FF;
+    border: solid #36AEFF;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: 'Fjalla One';
+
+}
+
+div.meatHook p {
+    margin-top: 1.6em;
+    position: absolute;
+    font-size: 1.2em;
+
+}
+
+
+
+div.meaty {
+    margin-left: 3.8em;
+    position: relative;
+    z-index: 1;
+    font-family: 'Fjalla One';
+}
+
+
+div.meaty li {
+    display: inline-flex;
+}
+
+div.meaty a {
+    color: #800202;
+    text-decoration: none;
+    outline: solid;
+    outline-color: #B90F0F;
+    background-color: #FB9696;
+    padding: 1em;
+}
+
+div.meaty a:hover {
+    color: #DB5E5E;
+    background-color: #470000;
+}
+
+
+/* i cri evrytim */
+
+#U {
+    color: red;
+}
+
+#S {
+    color: white;
+}
+
+#A {
+    color: blue;
+}
+
+div.borderWall {
+    position: relative;
+    top: 5%;
+    background-color: #A7A1A2;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3em;
+    font-family: 'Fjalla One';
+}
+
+div.mexico p {
+    color: brown;
+    text-align: center;
+}
+
+.legal p {
+    text-align: center;
+}
+
+.legal p:hover {
+
+}
+
+.legal a {
+    text-decoration: none;
+}
+
+div.normies {
+    margin: 3em;
+    border: 20px solid red;
+}
+
+.normies p {
+    text-align: center;
+    font-size: 3em;
+}
+
+#pepeHolder {
+    overflow: hidden;
+    position: relative;
+}
+
+#pepe {
+    position: relative;
+    top: -200px;
+    right: 200px;
+}
+
+body {
+    margin: 0;
+}
+
+.usa p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+
+@media screen and (max-width:480px)
+{
+    #vegan { width: 400px; }
+
+    div.meaty
+    {
+        float: none;
+        width: auto;
+        margin: 250%;
+        background-color: green;
+    }
+
+    #content
+    {
+        float: none;
+        width: auto;
+        margin: 0;
+    }
+
+    #extras
+    {
+        float: none;
+        width: auto;
+        margin: 0;
+    }
+
+    .feature-image { display: none; }
+}
+
+*/
