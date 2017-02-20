@@ -23,10 +23,10 @@
 }
 
 .vegan {
-    background-color: green;
+    background-color: #00CA00;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 3%;
+    margin-top: 2%;
     padding: 20px;
     padding-top: 30px;
     border-style: solid;
@@ -37,8 +37,8 @@
 
 .vegan p {
     text-align: justify;
-    font-family: 'Sansita', sans-serif;
-    font-size: 2em;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.2em;
 }
 
 div.meatHook{
