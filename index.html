@@ -1,42 +1,139 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
+<body>
+    <!--[if lt IE 8]>z
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <div class="">
-            
+    <!-- Add your site or application content here -->
+    <!-- End Boilerplate & Begin Original Content -->
+    <!-- First section, for logo, title, vision. Will take up full window-->
+    <div class="opening">
+        <!--For logo, page title-->
+        <div class="title">
+            <img class="logo" href="logo.jpg" alt="MBI Logo">
+            <h1>Mercury Built International</h1>
         </div>
+        <!--For "vision," aka message/moto of our organization-->
+        <div class="vision">
+            <!--For heading of vision area of title section-->
+            <div class="heading">
+                <h2>Vision</h2>
+            </div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+    </div>
+    <!--Second section, for description of current and future services-->
+    <div class="services">
+        <!--For heading of services section-->
+        <div class="heading">
+            <h2>Services</h2>
+        </div>
+        <div class="serviceList">
+            <ul>
+                <li>
+                    <h3>
+                        Service One
+                   </h3>
+                    <p>
+                        A description of service one. Possibly a link to further information. Not going into a ton of detail unless we have other pages
+                    </p>
+                </li>
+                <li>
+                    <h3>
+                        Service Two    
+                    </h3>
+                    <p>
+                        A description of service two. This service may not even exist yet, or will not exist for some time, but we need to fill the space and also give ourselves something to live up to.
+                    </p>
+                </li>
+                <li>
+                    <h3>
+                        Service Three    
+                    </h3>
+                    <p>
+                        A description of service three. Could there be more than three? Sure, why not, but three is a decent number to start out with and will look good on the page. Also, see <a href="https://en.wikipedia.org/wiki/Rule_of_three_(writing)" title="The Rule of Three (writing)"> The Rule of Three (wikipedia link)</a>.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--Third section, for subscription signup and possibly further information-->
+    <div class="subscribe">
+        <!--For heading of subscribe section-->
+        <div class="heading">
+            <h2>
+                Subscribe
+            </h2>
+        </div>
+        <!--For input and submission fields, additional information-->
+        <div class="subscription">
+            <p>Here is some information about what you will get when you subcribe. Probably not much for a while, but we will do something with this eventually.</p>
+            <input type="input" name="email" value="" placeholder="Enter your email address">
+            <input type="submit" name="submit" value="submit">
+        </div>
+    </div>
+    <!--Fourth section, for business contact information-->
+    <div class="contact">
+        <!--For heading of contact section-->
+        <div class="heading">
+            <h2>
+                Contact
+            </h2>
+        </div>
+        <!--For actual contact information-->
+        <div class="contactInfo">
+            <p>
+                I'm not entirely sure how we will format this section, but it will have the names and email addresses of those who wish to be listed here
+            </p>
+        </div>
+    </div>
+    <!--Fifth section, for legal and other information-->
+    <div class="legal">
+    <!--This section has a black background with white text. Not sure why I'm writing this here as this is the only place in the html where I discuss color but here it is -->
+    <p>
+        <span class="year">&copy;&nbsp;<script>document.write(new Date().getFullYear())</script></span>
+        <img class="logo" href="logo.jpg" alt="MBI Logo"> The Mercury Built International Team <!--As listed in the Contact section -->
+    </p>
+    </div>
+    <!-- End Original Content & Continue Boilerplate -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+    (function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function() {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-91864312-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+</body>
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-91864312-1','auto');ga('send','pageview');
-        </script>
-    </body>
 </html>
