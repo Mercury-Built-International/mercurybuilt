@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Sansita');
+
 .appetizer h1 {
     margin-left: 35%;
     margin-right: 35%;
@@ -75,7 +76,7 @@ div.meaty li {
     display: inline-flex;
 }
 
-div.meaty a {
+div.meaty a:link, div.meaty a:visited {
     color: #800202;
     text-decoration: none;
     outline: solid;
@@ -89,6 +90,10 @@ div.meaty a:hover {
     background-color: #470000;
 }
 
+div.meaty a:active {
+    color: #E88787;
+    background-color: #611919;
+}
 
 /* i cri evrytim */
 
