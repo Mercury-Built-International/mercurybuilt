@@ -1,12 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=News+Cycle|Oswald|Russo+One');
+
 
 /* universal formatting */
 body {
 	text-align: center;
+	font-family: Oswald;
 }
 
 body > div {
 	padding: 5%;
 }
+
+h1 {
+	font-family: "Russo One";
+}
+
+h2,h3 {
+	font-family: "News Cycle";
+}
+
 
 /*specific item formatting */
 div.heading {
@@ -14,13 +26,28 @@ div.heading {
 }
 
 img.logo {
-
-	max-width: auto;
+	max-width: 100%;
+	width: 64px;
+	height:  64px;
 }
 
 /*section formatting */
 div.welcome {
-	background-color: #57E4ED;
+	background-color: #00C9FF;
+}
+
+div.title {
+	display: inline-flex;
+}
+
+div.title img {
+	position: relative;
+	margin-top: 2%;
+}
+
+div.title h1 {
+	position: static;
+	margin-left: 5px;
 }
 
 div.vision {
@@ -28,7 +55,7 @@ div.vision {
 }
 
 div.services {
-	background-color: #2FDBE6;
+	background-color: #FF6227;
 }
 
 
@@ -41,6 +68,7 @@ div.services li {
 	padding:  1%;
 }
 
+/*non mobile */
 @media screen and (min-width: 520px){
 	div.services ul{
 		display: inline-flex;
@@ -49,11 +77,37 @@ div.services li {
 
 
 div.subscribe {
-	background-color: #0FBEC9;	
+	background-color: #0042B2;
+	color: #ffffff;
+}
+
+div.subscribe input[type="input"]{
+	width: 20%;
+	background-color: #B2CFFF;
+	color: #000000;
+	border: none;
+	padding: 5px 10px;
+}
+
+div.subscribe input[type="submit"]{
+	background-color: #347EFA;
+	border: none;
+	margin-top: 10px;
+	padding:  5px 10px;
+}
+
+div.subscribe input[type="submit"]:hover {
+	background-color: #345AFA;
+}
+
+div.subscribe input[type="submit"]:active {
+	background-color: #000000;
+	color: #ffffff;
 }
 
 div.contact {
-	background-color: #005358;	
+	background-color: #001E50;
+	color: #ffffff;
 }
 
 div.legal {
