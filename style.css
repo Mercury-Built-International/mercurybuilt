@@ -1,0 +1,65 @@
+
+/* universal formatting */
+body {
+	text-align: center;
+}
+
+body > div {
+	padding: 5%;
+}
+
+/*specific item formatting */
+div.heading {
+	text-transform: uppercase;
+}
+
+img.logo {
+
+	max-width: auto;
+}
+
+/*section formatting */
+div.welcome {
+	background-color: #57E4ED;
+}
+
+div.vision {
+
+}
+
+div.services {
+	background-color: #2FDBE6;
+}
+
+
+div.services ul {
+	list-style-type: none;
+	margin: 1% 10% 1% 10%;
+}
+
+div.services li {
+	padding:  1%;
+}
+
+@media screen and (min-width: 520px){
+	div.services ul{
+		display: inline-flex;
+	}
+}
+
+
+div.subscribe {
+	background-color: #0FBEC9;	
+}
+
+div.contact {
+	background-color: #005358;	
+}
+
+div.legal {
+	background-color: #000000;
+	color: #ffffff;
+	
+}
+
+/*mobile formatting */
