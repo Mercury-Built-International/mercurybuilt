@@ -8,18 +8,24 @@ body {
 }
 
 body > div {
-    padding: 5%;
+    padding: 2% 0;
 }
 
 h1 {
     font-family: "Russo One";
     color: #C9C9C9;
-    font-size: 4em;
+    font-size: 3em;
 }
 
 @media screen and (max-width: 496px) {
     h1 {
         font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    h1 {
+        font-size: 1.5em;
     }
 }
 
@@ -31,6 +37,7 @@ h2,
 h3 {
     font-family: "Poiret One";
     color: #ffffff;
+    margin: 1% auto;
 }
 
 div {}
@@ -48,12 +55,29 @@ a:visited {
     color: #00F7FF;
 }
 
+a:link[href^="mailto:"],
+a:visited[href^="mailto:"] {
+    color: #000000;
+}
+
+
+
 a:hover {
     color: #74FBFF;
 }
 
+
+
+a:hover[href^="mailto:"] {
+    color: #00F7FF;
+}
+
 a:active {
     color: #FFFFFF;
+}
+
+a:active[href^="mailto:"] {
+    color: #ffffff;
 }
 
 a[name] {
@@ -82,9 +106,10 @@ div.welcome {
     background-color: #000000;
     background-image: url("img/milky-way-from-earth.jpg");
     background-size: cover;
-    /*background-repeat: tile;
+    background-repeat: tile;
     background-attachment: fixed;
-    background-position: center; */
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 
 div.title {
@@ -99,9 +124,14 @@ div.title {
 
 div.title img {
     position: relative;
-    margin-top: 2%;
-    margin-left: 5%;
 }
+
+@media screen and (max-width: 1200px) {
+    div.title img {
+        margin: 0;
+    }
+}
+
 
 div.title h1 {
     position: static;
@@ -112,14 +142,28 @@ div.title h1 {
 @media screen and (max-width: 1200px) {
     div.title h1 {
         width: auto;
+        margin: .2em 1em;
     }
 }
 
 div.vision {
-    margin: 10% 25% -2% 25%;
+    margin: 10% 25% 6% 25%;
     background-color: rgba(255, 255, 255, .5);
     padding: 1% 5%;
 }
+
+@media screen and (max-width: 1200px) {
+    div.vision {
+        margin: 10% 10% 0%;
+    }
+}
+
+@media screen and (max-width: 762px) {
+    div.vision {
+        margin: 2% 2% 2% 2%;
+    }
+}
+
 
 div.vision p,
 div.vision h2 {
@@ -127,17 +171,20 @@ div.vision h2 {
     font-weight: bold;
 }
 
-@media screen and (max-width: 1024px) {
-    div.vision {
-        margin: 10% 15% 0 15%;
+div.vision h2 {
+    margin: 2% 0;
+}
+
+div.vision p {
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 762px) {
+    div.vision p {
+        font-size: 1.1em;
     }
 }
 
-@media screen and (max-width: 720px) {
-    div.vision {
-        margin: 10% 10% 0 10%;
-    }
-}
 
 div.services {
     /*background-color: #FF6227;
@@ -159,25 +206,23 @@ div.services {
 div.services h2 {}
 
 div.services h3 {
-    text-align: left;
-    margin-left: 10%;
+    text-align: center;
     font-size: 1.6em;
     text-decoration: underline;
 }
 
 div.services ul {
     list-style-type: none;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    margin-left: 0;
-    margin-right: 9%;
-    text-align: left;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 0;
 }
 
 div.services li {
-    padding: 1%;
+    padding: 4%;
     display: block;
-    background-color: rgba(149, 242, 255, .2)
+    background-color: rgba(110, 172, 230, .3);
+    margin: 2% 2% 0;
 }
 
 
@@ -186,7 +231,28 @@ div.services li {
 @media screen and (min-width: 520px) {
     div.services ul {
         display: inline-flex;
-        margin-right: 6%;
+        margin: 1% 0;
+        width: 100%;
+    }
+    div.services li {
+        margin: 2% 2% 0;
+        width: 45%;
+    }
+    div.services li:nth-child(even) {
+        margin: 2% 0 0;
+    }
+}
+
+div.services p {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 850px) {
+    div.services h3 {
+        font-size: 1.2em;
+    }
+    div.services p {
+        font-size: 1em;
     }
 }
 
@@ -195,11 +261,12 @@ div.subscribe {
     background-image: url('img/mercury.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
     color: #ffffff;
 }
 
 div.subscribe h2 {
-    height: auto;
 }
 
 div.subscribe input[type="email"] {
@@ -221,17 +288,18 @@ div.subscribe input[type="email"] {
 
 div.subscribe label {
     font-weight: bold;
+    background-color: rgba(0, 0, 0, .4);
 }
 
 div.subscribe input[type="submit"] {
-    background-color: #347EFA;
+    background-color: #0099FF;
     border: none;
     margin-top: 10px;
     padding: 5px 10px;
 }
 
 div.subscribe input[type="submit"]:hover {
-    background-color: #345AFA;
+    background-color: #0130FF;
 }
 
 div.subscribe input[type="submit"]:active {
@@ -250,16 +318,56 @@ div.contact {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0124bf', endColorstr='#7ac2cc', GradientType=0);
     /* IE6-9 */
+    padding-bottom: 7%;
 }
 
-div.contact div {
-    padding: 1% 0;
+div.contact div div div {
+    background-color: rgba(110, 172, 230, .3);
+    width: 14em;
+    padding: 2% 2%;
+    display: inline-block;
+    height: 14em;
+}
+
+div.contact div div div:nth-child(2) {}
+
+@media screen and (max-width: 800px) {
+    div.contact div div div {
+        display: block;
+        margin: 4px auto;
+        width: 28em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    div.contact div div div {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    div.contact div div div {
+        margin: 4px 2px;
+    }
 }
 
 div.contact ul {
     position: relative;
     list-style: none;
-    display:
+    padding: 0;
+}
+
+div.contact li {
+    font-weight: bold;
+    padding-top: 2%;
+}
+
+div.contact li:first-child {
+    padding-top: 0;
+}
+
+div.contact li:nth-child(even) {
+    font-size: 150%;
 }
 
 div.contact img {
@@ -269,6 +377,11 @@ div.contact img {
 
 div.legal {
     background-color: #7ac2cc;
+}
+
+div.legal p {
+    color: black;
+    font-weight: bold;
 }
 
 
